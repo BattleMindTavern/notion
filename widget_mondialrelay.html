@@ -14,8 +14,10 @@
   $(document).ready(function() {
     $("#Zone_Widget").MR_ParcelShopPicker({
       Target: "#ParcelShopCode",
-      Brand: "BDTEST  ",
-      Country: "FR"
+      Brand: "CC21LZE5",
+      Country: "FR",
+      EnableGeolocalisatedSearch:"true",
+      NbResults:"30"
     });
   });
 }();</script>
@@ -24,6 +26,6 @@
     <!-- Widget -->
     <div id="Zone_Widget"></div>
     <!-- Parcelshop code -->
-    <input type="hidden" id="ParcelShopCode" name="ParcelShopCode" />
+    <input id="ParcelShopCode" name="ParcelShopCode" />
   </body>
 </html>
